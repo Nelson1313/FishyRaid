@@ -1,0 +1,59 @@
+﻿<Window x:Class="TeamEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeamEditor"
+        xmlns:view="clr-namespace:TeamEditor.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized">
+    <Window.DataContext>
+        <view:TeamEditorWindowView/>
+    </Window.DataContext>
+    <Grid x:Name="myGrid">      
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <ListBox SelectedItem="{Binding SelectedFromAllFishes}"  Background="Transparent" ItemsSource="{Binding AllFishes}" Grid.Column="0" FontFamily="Engravers MT" FontSize="16" FontWeight="Bold" Foreground="#FFDEBB1A">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border>
+                        <StackPanel>
+                            <Label Content="{Binding Level}" ContentStringFormat="Level: {0}" Foreground="Gold" OpacityMask="Black"/>
+                            <Label Content="{Binding Levelformat}" ContentStringFormat="EXP: {0}" Foreground="Gold"/>
+                            <Label Content="{Binding Elet}" ContentStringFormat="Health: {0}" Foreground="Gold"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <StackPanel VerticalAlignment="Center" Grid.Column="1" >
+            <Button x:Name="addbutton" Padding="10" Margin="10" Content="Add To Team" Command="{Binding AddToTeam}" Foreground="#FF0F0F0F"/>
+            <Button x:Name="removebutton" Padding="10" Margin="10" Content="Remove From Team" Command="{Binding RemoveFromTeam}"/>
+            <Button x:Name="save" Content="Save" Padding="10" Margin="10" Command="{Binding Save}"/>
+        </StackPanel>
+
+        <ListBox SelectedItem="{Binding SelectedFromFishesAboutToFight}" ItemsSource="{Binding FishesAboutToFight}" Grid.Column="2" FontFamily="Engravers MT" FontSize="16" FontWeight="Bold" FontStyle="Normal" Background="#00EAEAEA">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderThickness="4" HorizontalAlignment="Stretch" Padding="10" VerticalAlignment="Stretch">
+                        <StackPanel>
+
+                            <Label Content="{Binding Level}" ContentStringFormat="Level {0}" Foreground="Black" />
+                            <Label Content="{Binding Levelformat}" ContentStringFormat="EXP {0}" Foreground="Black"/>
+                            <Label Content="{Binding Elet}" ContentStringFormat="Health: {0}" Foreground="Black"/>
+
+                        </StackPanel>
+
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

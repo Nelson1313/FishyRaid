@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DungeonMap", "DungeonMap\DungeonMap.csproj", "{916241A2-3454-4E3B-B5DB-70258199AB90}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeforeFightMenu", "BeforeFightMenu\BeforeFightMenu.csproj", "{2D76B7BE-3C82-4150-A12B-ADFC17F234A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FishyRaidFightSystem", "..\FishyRaidFightSystem\FishyRaidFightSystem.csproj", "{B875A8F2-9DE4-4810-BC7F-2D52E4D67A71}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fishy Raid", "Fishy Raid\Fishy Raid\Fishy Raid.csproj", "{24DC6285-3E9F-4159-8030-7447B2854B8B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeamEditor", "TeamEditor\TeamEditor.csproj", "{DAECF620-B67B-4C45-8E72-B9985843762B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AfterFightMenu", "AfterFightMenu\AfterFightMenu.csproj", "{CDF4B1A8-1EA2-47BB-9209-2DC3D9A2179A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{916241A2-3454-4E3B-B5DB-70258199AB90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{916241A2-3454-4E3B-B5DB-70258199AB90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{916241A2-3454-4E3B-B5DB-70258199AB90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{916241A2-3454-4E3B-B5DB-70258199AB90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D76B7BE-3C82-4150-A12B-ADFC17F234A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D76B7BE-3C82-4150-A12B-ADFC17F234A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D76B7BE-3C82-4150-A12B-ADFC17F234A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D76B7BE-3C82-4150-A12B-ADFC17F234A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B875A8F2-9DE4-4810-BC7F-2D52E4D67A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B875A8F2-9DE4-4810-BC7F-2D52E4D67A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B875A8F2-9DE4-4810-BC7F-2D52E4D67A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B875A8F2-9DE4-4810-BC7F-2D52E4D67A71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24DC6285-3E9F-4159-8030-7447B2854B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24DC6285-3E9F-4159-8030-7447B2854B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24DC6285-3E9F-4159-8030-7447B2854B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24DC6285-3E9F-4159-8030-7447B2854B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAECF620-B67B-4C45-8E72-B9985843762B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAECF620-B67B-4C45-8E72-B9985843762B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAECF620-B67B-4C45-8E72-B9985843762B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAECF620-B67B-4C45-8E72-B9985843762B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDF4B1A8-1EA2-47BB-9209-2DC3D9A2179A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDF4B1A8-1EA2-47BB-9209-2DC3D9A2179A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDF4B1A8-1EA2-47BB-9209-2DC3D9A2179A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDF4B1A8-1EA2-47BB-9209-2DC3D9A2179A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA4AD749-7338-4377-A6EF-2BEB07D67E81}
+	EndGlobalSection
+EndGlobal

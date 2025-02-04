@@ -1,0 +1,1 @@
+fishy raid projekten belül töröld ki a bin/debug mappát és rakd be a helyére az itt láthatót.

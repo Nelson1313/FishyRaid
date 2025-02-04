@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>Fishy_Raid</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="buttonstyle.png" />
+    <None Remove="gomb.png" />
+    <None Remove="hal.bmp" />
+    <None Remove="mainmenu.jpg" />
+    <None Remove="torottbutton.png" />
+    <None Remove="torottgomb.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="buttonstyle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gomb.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="hal.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mainmenu.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="torottbutton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="torottgomb.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\FishyRaidFightSystem\FishyRaidFightSystem.csproj" />
+    <ProjectReference Include="..\..\DungeonMap\DungeonMap.csproj" />
+    <ProjectReference Include="..\..\TeamEditor\TeamEditor.csproj" />
+  </ItemGroup>
+
+</Project>

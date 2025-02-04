@@ -1,0 +1,56 @@
+﻿<Window x:Class="DungeonMap.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DungeonMap"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized">
+    <Grid x:Name="mygrid">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Button Tag="1" x:Name="first" Click="Button_Click" Grid.Column="0" Grid.Row="4" Content="Start" BorderThickness="0" FontFamily="Castellar">
+            
+        </Button>
+        <Button x:Name="second" Tag="2" Click="Button_Click" Grid.Column="1" Grid.Row="3" Content="Start" BorderThickness="0" FontFamily="Castellar">
+            
+        </Button>
+        <Button x:Name="third" Tag="3" Click="Button_Click" Grid.Column="2" Grid.Row="2" Content="Start" BorderThickness="0" FontFamily="Castellar">
+            
+        </Button>
+        <Button x:Name="fourth" Tag="4" Click="Button_Click" Grid.Column="3" Grid.Row="1" Content="Start" BorderThickness="0" FontFamily="Castellar">
+            
+        </Button>
+        <Button x:Name="fifth" Tag="5" Click="Button_Click" Grid.Column="4" Grid.Row="0" Content="Start" BorderThickness="0" FontFamily="Castellar">
+            
+        </Button>
+        <Button x:Name="sixth" Tag="6" Click="Button_Click" Grid.Column="5" Grid.Row="1" Content="Start" BorderThickness="0" FontFamily="Castellar">
+            
+        </Button>
+        <Button x:Name="seventh" Tag="7" Click="Button_Click" Grid.Column="6" Grid.Row="2" Content="Start" BorderThickness="0" FontFamily="Castellar">
+            
+        </Button>
+
+
+
+
+
+    </Grid>
+</Window>
